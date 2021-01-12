@@ -11,10 +11,10 @@
 <body>
     <header>
         <p>Infopage</p>
-        <a href="#"><i class="fas fa-info-circle"></i></a>
-        <nav>
+        <a onclick="displayBlock()"><i class="fas fa-info-circle"></i></a>
+        <nav id="nav-bar">
             <ul>
-                <li><a href="#"><i class="fas fa-space-shuttle"></i></a></li>
+                <li><a href="##"><i class="fas fa-space-shuttle"></i></a></li>
                 <li><a href="#"><i class="fas fa-calendar-alt"></i></a></li>
                 <li><a href="#"><i class="fas fa-cloud"></i></a></li>
             </ul>
@@ -35,6 +35,17 @@
 
 
         <script type="text/javascript">
+
+            function displayBlock() {
+                const infoDisplay = document.getElementById("nav-bar");
+
+                if (infoDisplay.style.display == "block") {
+                    infoDisplay.style.display = "none";
+                } else {
+                    infoDisplay.style.display = "block";
+                }
+            }
+
             const deg = 6;
             const hr = document.querySelector("#hr");
             const mn = document.querySelector("#mn");
