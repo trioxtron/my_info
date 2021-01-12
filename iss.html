@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>ISS Information</title>
+        <link rel="stylesheet" href="css/all.css" />
+        <link rel="stylesheet" href="iss.css" />
+    </head>
+
+    <body>
+        <header>
+            <p>ISS Infopage</p>
+            <div>
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                </a>
+                <a onclick="displayBlock()">
+                    <i class="fas fa-info-circle"></i>
+                </a>
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-calendar-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-cloud"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="far fa-newspaper"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <script>
+                function displayBlock() {
+                    const infoDisplay = document.getElementById("nav-bar");
+
+                    if (infoDisplay.style.display == "block") {
+                        infoDisplay.style.display = "none";
+                    } else {
+                        infoDisplay.style.display = "block";
+                    }
+                }
+            </script>
+        </header>
+
+        <div>
+            <div>
+                <p class="heading">Livetracker</p>
+                <p>15.543km/h</p>
+                <p>Europe</p>
+            </div>
+            <div>
+                <p class="heading">Next pass</p>
+                <div>
+                    <div>
+                        <p>Start: </p>
+                        <p>End: </p>
+                    </div>
+                    <div>
+                        <p>16:22</p>
+                        <p>16:24</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

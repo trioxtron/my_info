@@ -1,0 +1,102 @@
+:root {
+    --div-background: #929dac;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    text-align: center;
+    font-size: 16px;
+    background-color: #353b48;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body > div {
+    margin: 0 auto;
+}
+
+body > header {
+    font-size: 2.5rem;
+    height: 3.5rem;
+    margin-bottom: 3rem;
+    background-color: #2f3640;
+}
+
+header > div {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    right: 2rem;
+    top: 0.25rem;
+    border-radius: 50%;
+}
+
+header nav {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    right: 2rem;
+    top: 3.25rem;
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+header nav {
+    display: none;
+}
+
+header div {
+    width: 6.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+body > div > div {
+    margin: 0;
+    text-align: left;
+    border: 0.125rem solid var(--div-background);
+    border-radius: 0.5rem;
+    background-color: var(--div-background);
+}
+
+body > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body > div > div > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+body > div > div p {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.heading {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
