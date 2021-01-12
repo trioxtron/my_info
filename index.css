@@ -10,6 +10,7 @@ p {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 body {
@@ -19,29 +20,76 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+ul {
+    list-style-type: none;
+}
+
 body * div {
     margin: 0 auto;
 }
 
 body > header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 2.5rem;
     height: 3.5rem;
     margin-bottom: 3rem;
     background-color: #2f3640;
 }
 
-/*
-body > header > a > span > p {
-    font-size: 0;
-    width: 1rem;
-    height: 1rem;
-    z-index: -1;
-    background: url(github_logo.png);
+
+header > a {
+    position: absolute;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    right: 2rem;
+    top: 0.25rem;
 }
-*/
+
+header nav {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    right: 2rem;
+    top: 3.25rem;
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+
+/* header a:hover{
+
+} */
+
+
+
+/* body > header ul  {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0;
+}
+
+body > header a {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background: url(pictures/nasa.png) no-repeat;
+    background-size: contain;
+}
+
+body > header li:nth-child(2) a {
+    background-image: url(pictures/calendar.png);
+}
+
+
+body > header li:nth-child(3) a {
+    background-image: url(pictures/weather.png);
+} */
+
 
 #analog_clock {
     display: flex;
@@ -57,7 +105,7 @@ body > header > a > span > p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(pictures/clock.png);
+    background: url(images/clock.png);
     background-size: cover;
     border: 2px solid #2f3640;
     border-radius: 50%;
@@ -101,7 +149,6 @@ body > header > a > span > p {
 .hr, .mn, .sc {
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
     position: absolute;
     border-radius: 50%;
 }
