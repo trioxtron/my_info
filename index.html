@@ -1,68 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf=8" />
+        <title>My Infos</title>
+        <link rel="stylesheet" href="css/all.css" />
+        <link rel="stylesheet" href="index.css" />
+    </head>
 
-<head>
-    <meta charset="utf=8" />
-    <title>My Infos</title>
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="index.css" />
-</head>
+    <body>
+        <header>
+            <p>Infopage</p>
+            <a onclick="displayBlock()"><i class="fas fa-info-circle"></i></a>
+            <nav id="nav-bar">
+                <ul>
+                    <li>
+                        <a href="iss.html"
+                            ><i class="fas fa-space-shuttle"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-calendar-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-cloud"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="far fa-newspaper"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <script>
+                function displayBlock() {
+                    const infoDisplay = document.getElementById("nav-bar");
 
-<body>
-    <header>
-        <p>Infopage</p>
-        <a onclick="displayBlock()"><i class="fas fa-info-circle"></i></a>
-        <nav id="nav-bar">
-            <ul>
-                <li><a href="##"><i class="fas fa-space-shuttle"></i></a></li>
-                <li><a href="#"><i class="fas fa-calendar-alt"></i></a></li>
-                <li><a href="#"><i class="fas fa-cloud"></i></a></li>
-            </ul>
-        </nav>
-    </header>
-    <div id="analog-clock">
-        <div id="clock">
-            <div class="hour">
-                <div class="hr" id="hr"></div>
-            </div>
-            <div class="min">
-                <div class="mn" id="mn"></div>
-            </div>
-            <div class="sec">
-                <div class="sc" id="sc"></div>
-            </div>
-        </div>
-
-
-        <script type="text/javascript">
-
-            function displayBlock() {
-                const infoDisplay = document.getElementById("nav-bar");
-
-                if (infoDisplay.style.display == "block") {
-                    infoDisplay.style.display = "none";
-                } else {
-                    infoDisplay.style.display = "block";
+                    if (infoDisplay.style.display == "block") {
+                        infoDisplay.style.display = "none";
+                    } else {
+                        infoDisplay.style.display = "block";
+                    }
                 }
-            }
+            </script>
+        </header>
 
-            const deg = 6;
-            const hr = document.querySelector("#hr");
-            const mn = document.querySelector("#mn");
-            const sc = document.querySelector("#sc");
+        <div id="analog-clock">
+            <div id="clock">
+                <div class="hour">
+                    <div class="hr" id="hr"></div>
+                </div>
+                <div class="min">
+                    <div class="mn" id="mn"></div>
+                </div>
+                <div class="sec">
+                    <div class="sc" id="sc"></div>
+                </div>
+            </div>
 
-            setInterval(() => {
-                let day = new Date();
-                let hh = day.getHours() * 30;
-                let mm = day.getMinutes() * deg;
-                let ss = day.getSeconds() * deg;
+            <script type="text/javascript">
+                const deg = 6;
+                const hr = document.querySelector("#hr");
+                const mn = document.querySelector("#mn");
+                const sc = document.querySelector("#sc");
 
-                hr.style.transform = `rotateZ(${hh + mm / 12}deg)`;
-                mn.style.transform = `rotateZ(${mm}deg)`;
-                sc.style.transform = `rotateZ(${ss}deg)`;
-            });
-        </script>
-    </div>
-</body>
+                setInterval(() => {
+                    let day = new Date();
+                    let hh = day.getHours() * 30;
+                    let mm = day.getMinutes() * deg;
+                    let ss = day.getSeconds() * deg;
 
+                    hr.style.transform = `rotateZ(${hh + mm / 12}deg)`;
+                    mn.style.transform = `rotateZ(${mm}deg)`;
+                    sc.style.transform = `rotateZ(${ss}deg)`;
+                });
+            </script>
+        </div>
+    </body>
 </html>

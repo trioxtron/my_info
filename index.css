@@ -13,7 +13,6 @@ a {
     color: #fff;
 }
 
-
 body {
     text-align: center;
     font-size: 16px;
@@ -35,7 +34,6 @@ body > header {
     margin-bottom: 3rem;
     background-color: #2f3640;
 }
-
 
 header > a {
     position: absolute;
@@ -65,32 +63,6 @@ header nav {
     display: none;
 }
 
-
-
-/* body > header ul  {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 0;
-}
-
-body > header a {
-    display: inline-block;
-    width: 3rem;
-    height: 3rem;
-    background: url(pictures/nasa.png) no-repeat;
-    background-size: contain;
-}
-
-body > header li:nth-child(2) a {
-    background-image: url(pictures/calendar.png);
-}
-
-
-body > header li:nth-child(3) a {
-    background-image: url(pictures/weather.png);
-} */
-
-
 #analog_clock {
     display: flex;
     justify-content: center;
@@ -110,13 +82,12 @@ body > header li:nth-child(3) a {
     border: 2px solid #2f3640;
     border-radius: 50%;
     box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
-                inset 0 -15px 15px rgba(255, 255, 255, 0.05),
-                0 15px 15px rgba(0, 0, 0, 0.3),
-                inset 0 15px 15px rgba(0, 0, 0, 0.3);
+        inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+        0 15px 15px rgba(0, 0, 0, 0.3), inset 0 15px 15px rgba(0, 0, 0, 0.3);
 }
 
 #clock::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 1rem;
     height: 1rem;
@@ -131,22 +102,27 @@ body > header li:nth-child(3) a {
     position: absolute;
 }
 
-#clock .hour, .hr {
+#clock .hour,
+.hr {
     width: 10rem;
     height: 10rem;
 }
 
-#clock .min, .mn {
+#clock .min,
+.mn {
     width: 11.875rem;
     height: 11.875rem;
 }
 
-#clock .sec, .sc {
+#clock .sec,
+.sc {
     width: 14.375rem;
     height: 14.375rem;
 }
 
-.hr, .mn, .sc {
+.hr,
+.mn,
+.sc {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -154,7 +130,7 @@ body > header li:nth-child(3) a {
 }
 
 .hr::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 0.5rem;
     height: 5rem;
@@ -164,7 +140,7 @@ body > header li:nth-child(3) a {
 }
 
 .mn::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 0.25rem;
     height: 5.625rem;
@@ -174,7 +150,7 @@ body > header li:nth-child(3) a {
 }
 
 .sc::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 0.125rem;
     height: 9.375rem;
